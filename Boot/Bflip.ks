@@ -6,10 +6,10 @@ function runscript {
 GLOBAL SSstat IS "Pre_Launch".
 
 runscript("lib_navball").
-runscript("launch").
-runscript("E2E").
-runscript("steering").
-runscript("landing").
+runscript("Launch").
+runscript("Guidance").
+runscript("Glide").
+runscript("Landing").
 core:part:getmodule("kOSProcessor"):doevent("Open Terminal").
 Print "Please choose a landingpad target" at(0,1).
 until HASTARGET {wait 0.}
